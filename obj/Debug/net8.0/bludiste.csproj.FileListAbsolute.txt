@@ -1,0 +1,14 @@
+/home/veve/Github/Csharp-coding/bludiste/bin/Debug/net8.0/bludiste
+/home/veve/Github/Csharp-coding/bludiste/bin/Debug/net8.0/bludiste.deps.json
+/home/veve/Github/Csharp-coding/bludiste/bin/Debug/net8.0/bludiste.runtimeconfig.json
+/home/veve/Github/Csharp-coding/bludiste/bin/Debug/net8.0/bludiste.dll
+/home/veve/Github/Csharp-coding/bludiste/bin/Debug/net8.0/bludiste.pdb
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.GeneratedMSBuildEditorConfig.editorconfig
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.AssemblyInfoInputs.cache
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.AssemblyInfo.cs
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.csproj.CoreCompileInputs.cache
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.dll
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/refint/bludiste.dll
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.pdb
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.genruntimeconfig.cache
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/ref/bludiste.dll
