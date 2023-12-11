@@ -1,0 +1,108 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace MazeSolver
+{
+    public class MazeGenerator
+    {
+        public static void Main(string[] args) {
+            MazeGenerator mazeGenerator = new MazeGenerator(81, 81);
+            mazeGenerator.Generate();
+            mazeGenerator.PrintMaze();
+        }
+
+        public class Cell
+        {
+            public bool visited, blocked;
+            public int row, column;
+        }
+
+        private Random random = new Random();
+        private Cell[,] cells;
+        private int numRows, numCols;
+
+        public MazeGenerator(int numRows, int numCols)
+        {
+            cells = new Cell[numRows, numCols];
+            this.numRows = numRows;
+            this.numCols = numCols;
+            // Initialize cell array.
+            for (int row = 0; row < numRows; row++)
+            for (int colum = 0; colum < numCols; colum++)
+                cells[row, colum] = new Cell
+                {   visited = false, blocked = true,
+                    row = row, column = colum        };
+        }
+
+        public void Generate()
+        {
+            var stack = new Stack<Cell>();
+
+            // Add starting cell to top of stack, mark visited.
+            stack.Push(cells[1, 1]);
+            stack.Peek().visited = true;
+            stack.Peek().blocked = false;
+            
+            while (stack.Any()) {
+                // Get current cell from top of stack.
+                Cell thisCell = stack.Peek();
+
+                // Get unvisited neighbour cells.
+                List<Cell> neighbourCells = GetNeighbourCells(thisCell);
+
+                if (neighbourCells.Any()) {
+                    // Randomly select neighbour cell.
+                    Cell nextCell = neighbourCells[random.Next(neighbourCells.Count)];
+
+                    // Get wall cell between current and neighbour cells.
+                    int midRow = thisCell.row + (nextCell.row - thisCell.row) / 2;
+                    int midCol = thisCell.column + (nextCell.column - thisCell.column) / 2;
+                    Cell wallCell = cells[midRow, midCol];
+
+                    // Mark neighbour and wall cells as unblocked.
+                    nextCell.blocked = false;
+                    wallCell.blocked = false;
+
+                    // Add neighbour cell to top of stack, mark visited.
+                    stack.Push(nextCell);
+                    nextCell.visited = true;
+                }
+                else stack.Pop();
+            }
+            int[,] Generated_Map = new int[81, 81];
+            for (int row = 0; row < 81; row++)
+            for (int colum = 0; colum < 81; colum++)
+            Generated_Map[row,colum] = cells[row, colum].blocked ? 1 : 0;
+        }
+
+        private List<Cell> GetNeighbourCells(Cell cell)
+        {
+            List<Cell> neighbourCells = new List<Cell>();
+
+            int row = cell.row;
+            int col = cell.column;
+
+            if (row > 2 && !cells[row - 2, col].visited)
+                neighbourCells.Add(cells[row - 2, col]);
+            if (col > 2 && !cells[row, col - 2].visited)
+                neighbourCells.Add(cells[row, col - 2]);
+            if (row < numRows - 3 && !cells[row + 2, col].visited)
+                neighbourCells.Add(cells[row + 2, col]);
+            if (col < numCols - 3 && !cells[row, col + 2].visited)
+                neighbourCells.Add(cells[row, col + 2]);
+
+            return neighbourCells;
+        }
+
+        public void PrintMaze()
+        {
+            for (int row = 0; row < numRows; row++){
+            for (int colum = 0; colum < numCols; colum++)
+                Console.Write(cells[row, colum].blocked ? "██" : "  ");
+            Console.WriteLine();
+            }
+
+        }
+    }
+}

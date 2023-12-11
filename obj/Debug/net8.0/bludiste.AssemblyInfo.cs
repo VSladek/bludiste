@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bludiste")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ca331eaf98d40603a168beec8702d5a3c7e668e")]
 [assembly: System.Reflection.AssemblyProductAttribute("bludiste")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bludiste")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

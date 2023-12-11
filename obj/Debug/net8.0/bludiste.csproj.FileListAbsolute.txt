@@ -12,3 +12,4 @@
 /home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.pdb
 /home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.genruntimeconfig.cache
 /home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/ref/bludiste.dll
+/home/veve/Github/Csharp-coding/bludiste/obj/Debug/net8.0/bludiste.sourcelink.json
