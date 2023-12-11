@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/veve/Github/Csharp-coding/bludiste/bludiste.csproj": {}
+    "/workspaces/bludiste/bludiste.csproj": {}
   },
   "projects": {
-    "/home/veve/Github/Csharp-coding/bludiste/bludiste.csproj": {
+    "/workspaces/bludiste/bludiste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/veve/Github/Csharp-coding/bludiste/bludiste.csproj",
+        "projectUniqueName": "/workspaces/bludiste/bludiste.csproj",
         "projectName": "bludiste",
-        "projectPath": "/home/veve/Github/Csharp-coding/bludiste/bludiste.csproj",
-        "packagesPath": "/home/veve/.nuget/packages/",
-        "outputPath": "/home/veve/Github/Csharp-coding/bludiste/obj/",
+        "projectPath": "/workspaces/bludiste/bludiste.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/bludiste/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/veve/.nuget/NuGet/NuGet.Config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/opt/dotnet/8.0.100/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

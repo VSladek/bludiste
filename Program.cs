@@ -189,7 +189,13 @@ namespace bludiste
         public static int mapSize = 10;
         public static bool generation = false;
         public static bool debug = false;
-    } 
+    }
+    public class Generated {
+        private static Random ran = new Random();
+        public Generated() {
+            
+        }
+    }
     static class Maps
     {
         /*

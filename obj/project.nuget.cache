@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Iqu10QraNdxrm2DnAckAcK5oWmIOvFXwdAIEndgMwuEXxGrK+OgDVZ6pWQDwp0RKoqPmrzCi6yCSEUtRwGM8kg==",
+  "dgSpecHash": "l1nrJAwoBG3OVWAO2GJ3RGLvzsIlcwPpX35X6OjayJ1zyvhvinE8SjMoY/de0R4hOTMHY3CCNEFyjlGQPW6g7A==",
   "success": true,
-  "projectFilePath": "/home/veve/Github/Csharp-coding/bludiste/bludiste.csproj",
+  "projectFilePath": "/workspaces/bludiste/bludiste.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
